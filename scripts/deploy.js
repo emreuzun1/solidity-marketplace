@@ -1,21 +1,19 @@
 const hre = require("hardhat");
 
 async function main() {
-  /* const AdessoOKR = await hre.ethers.getContractFactory("AdessoOKR");
-  const adessoOKR = await AdessoOKR.deploy(
-    "0xF34539e55173c6ed56fb973A02b3BE2Fe56BD9f3"
-  );
+  const Adesso = await hre.ethers.getContractFactory("Adesso");
+  const adesso = await Adesso.deploy();
 
-  await adessoOKR.waitForDeployment();
+  await adesso.waitForDeployment();
 
-  console.log("Deployed to:", adessoOKR.target); */
+  console.log("Deployed to:", adesso.target);
 
-  const Marketplace = await hre.ethers.getContractFactory("Marketplace");
+  /* const Marketplace = await hre.ethers.getContractFactory("Marketplace");
   const marketPlace = await Marketplace.deploy();
 
   await marketPlace.waitForDeployment();
 
-  console.log("Deployed to:", marketPlace.target);
+  console.log("Deployed to:", marketPlace.target); */
 }
 
 main().catch((error) => {

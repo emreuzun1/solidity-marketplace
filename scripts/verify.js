@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
   await hre.run("verify:verify", {
-    address: "0x7826d461E7ef6Ae101D903a784A15c74E6b0ED60",
+    address: "0xF446adad2445302a849a6A4D6D64D8fC94E5Ad1a",
   });
 }
 
